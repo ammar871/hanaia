@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="7dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+
+            android:scaleType="fitXY"
+            android:background="@drawable/drawble_corner"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="price"
+            android:background="@color/red"
+            android:textColor="#FFF"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/imagdelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="price"
+
+            android:src="@drawable/ic_delete_black_24dp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#7C000000"
+            android:layout_alignParentBottom="true"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/txtItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/changa_extralight"
+                android:layout_centerHorizontal="true"
+                android:text="name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

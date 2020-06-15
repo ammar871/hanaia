@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/firstRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/detailsNewItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="أحذيــة رجالي "
+                    android:textSize="20dp"
+
+                    android:textStyle="italic" />
+                <!--new items rec view-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcFootsMen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detailsNewItems"
+                    android:layout_marginTop="10dp" />
+
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/detailsPopular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RcFootsMen"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:text="أحذيــة حــريمي "
+                    android:textSize="20dp"
+                    android:textStyle="italic" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcFootsfamel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailsPopular"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/detailsSuggested"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RcFootsfamel"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:text="أحذيــة أطفالي"
+                    android:textSize="20dp"
+
+                    android:textStyle="italic" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcFootschild"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detailsSuggested"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</layout>

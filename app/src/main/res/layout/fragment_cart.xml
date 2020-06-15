@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".cart.CartFragment"
+        android:padding="16dp"  >
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:text="Cart"
+            android:layout_above="@id/card"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/card"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total : "
+                        android:id="@+id/text_total"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_toRightOf="@id/text_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$ 00,000"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/btnplaceorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="8sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:background="#FFAB00"
+                    android:text="طــــلب "
+                    android:fontFamily="@font/changa_extralight"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

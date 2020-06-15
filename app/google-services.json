@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "851975292360",
+    "firebase_url": "https://hanaia-2f41e.firebaseio.com",
+    "project_id": "hanaia-2f41e",
+    "storage_bucket": "hanaia-2f41e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851975292360:android:ba4261df1774e0d2052cfd",
+        "android_client_info": {
+          "package_name": "com.example.hanaiabeauty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851975292360-gf75shqge8mjceu3dgge3nqd0mniji77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hanaiabeauty",
+            "certificate_hash": "a3203b100183f6af8bc0a7fbd028a8a99eba932b"
+          }
+        },
+        {
+          "client_id": "851975292360-kmnpav27sfv4run2cvq0ue9kl0el6tbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtwVukkgu2O1-bjbEYKBLMeTv1Pfmbk9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851975292360-kmnpav27sfv4run2cvq0ue9kl0el6tbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

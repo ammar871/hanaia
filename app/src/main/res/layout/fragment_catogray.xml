@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".catograyprodect.CatograyFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+           android:layout_marginTop="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_catogray" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

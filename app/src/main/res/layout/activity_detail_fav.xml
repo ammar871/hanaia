@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".detailes.DetailActivity">
+
+        <ImageView
+            android:id="@+id/image_Detail"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:scaleType="fitXY"
+            android:src="@color/red" />
+
+
+        <TextView
+            android:id="@+id/name_detailes"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="250dp"
+            android:background="#DBDBDB"
+            android:fontFamily="@font/changa_extralight"
+            android:gravity="center"
+            android:text="name ammar ebrahim mofgffffffffffffffffffffffffff"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:elevation="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price_detailes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name_detailes"
+            android:background="@drawable/drawble_price"
+            android:fontFamily="@font/changa_extralight"
+
+            android:padding="8dp"
+            android:text="name"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/card_de"
+            android:layout_below="@id/price_detailes">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="right"
+                android:layout_marginTop="20dp"
+                android:text="descri3eeeeeeeeeeeeeeef refeeeeeeeeeeeeeeeeeee3wfwwwwwwwwwwwwwwwwwwwwwwwwwfwefp"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:id="@+id/desc_detail"
+
+                />
+
+
+        </ScrollView>
+        <!--
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating"
+                    android:isIndicator="true"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_above="@id/card_de"
+                    android:max="5"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:rating="0"
+                    android:elevation="20dp" />-->
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@id/card_de"
+            android:id="@+id/ratingbtn"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingbutton"
+                android:src="@drawable/ic_star_black_24dp"
+                android:background="@color/backgraund"
+                android:elevation="20dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating"
+                android:layout_gravity="center"
+                android:fontFamily="@font/changa_extralight"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>-->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_de"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            app:cardElevation="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/number_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="3"
+                    android:background="@color/backgraund"
+                    app:backGroundColor="@color/backgraund"
+                    app:finalNumber="20"
+
+                    app:initialNumber="1"
+                    app:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/add_cartfav"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:background="@color/backgraund"
+                    android:fontFamily="@font/changa_extralight"
+                    android:text="أضف إلي السلة "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

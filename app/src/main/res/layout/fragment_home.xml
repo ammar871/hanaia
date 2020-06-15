@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+       <!-- <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+            android:id="@+id/swip_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="8dp">
+-->
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/firstRelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/detailsNewItems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:text="مــلابس رجالي "
+                        android:textSize="20dp"
+
+                        android:textStyle="italic" />
+                    <!--new items rec view-->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RcClothMen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detailsNewItems"
+                        android:layout_marginTop="10dp" />
+
+
+                    <TextView
+                        android:id="@+id/detailsPopular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RcClothMen"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:text="مــلابس حــريمي "
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RcClothfamel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/detailsPopular"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/detailsSuggested2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RcClothfamel"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:text="مــلابس أطفالي"
+                        android:textSize="20dp"
+
+                        android:textStyle="italic" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RcClothchild"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detailsSuggested2"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/detailsNewItems1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RcClothchild"
+                        android:padding="5dp"
+                        android:text="أحذيــة رجالي "
+                        android:textSize="20dp"
+
+                        android:textStyle="italic" />
+                    <!--new items rec view-->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RcFootsMen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detailsNewItems1"
+                        android:layout_marginTop="10dp" />
+
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/detailsPopular2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RcFootsMen"
+                        android:layout_marginTop="15dp"
+                        android:padding="5dp"
+                        android:text="أحذيــة حــريمي "
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RcFootsfamel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/detailsPopular2"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/detailsSuggested3"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RcFootsfamel"
+                        android:layout_marginTop="15dp"
+                        android:padding="5dp"
+                        android:text="أحذيــة أطفالي"
+                        android:textSize="20dp"
+
+                        android:textStyle="italic" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RcFootschild"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detailsSuggested3"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/detailsSuggested4"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RcFootschild"
+                        android:layout_marginTop="15dp"
+                        android:padding="5dp"
+                        android:text="اكسسوارات "
+                        android:textSize="20dp"
+
+                        android:textStyle="italic" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RcExecWaratchild"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detailsSuggested4"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+</layout>

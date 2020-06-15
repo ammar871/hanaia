@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Hanaia Beauty</string>
+    <string name="forget_password"><u>نسيت كلمة المرور؟</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="numbers">
+        <item>اختـار النــوع</item>
+        <item>ملابس رجال</item>
+        <item>ملابس نساء</item>
+        <item>ملابس أطفال</item>
+        <item>أحذية رجال</item>
+        <item>أحذية نساء</item>
+        <item>أحذيةأطفال</item>
+        <item>اكسسوارات</item>
+        <item>مستحضرات تجميل</item>
+        <item>العطـور</item>
+        <item>عروض 1</item>
+        <item>عروض 2</item>
+        <item>عروض 3</item>
+        <item>شنط يد نسائية</item>
+        <item>متفرقات</item>
+        <item>تاجر1</item>
+        <item>تاجر2</item>
+        <item>تاجر3</item>
+        <item>تاجر4</item>
+
+    </string-array>
+</resources>

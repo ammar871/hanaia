@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/backgraund"
+
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/changa_extralight"
+                android:text="الاعدادات  "
+                android:textColor="@color/white"
+                android:textSize="25dp"
+
+                />
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/log_out_card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+android:background="@color/backgraund"
+
+                >
+
+                <TextView
+                    android:id="@+id/log_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/changa_extralight"
+                    android:text="تسجيل الخروج "
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/logoutim"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_exit_to_app_black_24dp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Share_card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_below="@+id/log_out_card"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+android:background="@color/backgraund"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/changa_extralight"
+                    android:text="مشاركة التطبيق"
+                    android:textSize="20dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                   android:layout_margin="10dp"
+                    android:src="@drawable/ic_share_black_24dp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/About_card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/Share_card"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+android:background="@color/backgraund"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/changa_extralight"
+                    android:text="عن التطبيق "
+                    android:textSize="20dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_textsms_black_24dp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="الرئيسية"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/homeActivity"/>
+
+
+    <item
+        android:title="بحث"
+        android:icon="@drawable/ic_search"
+        android:id="@+id/search"/>
+
+    <item
+        android:title="السلـة"
+        android:icon="@drawable/ic_cart"
+        android:id="@+id/cart"/>
+    <item
+        android:title="المفضلة"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:id="@+id/fav"/>
+
+    <item
+        android:title="الاعدادات"
+        android:icon="@drawable/baseline_settings_black_18dp"
+        android:id="@+id/add"/>
+</menu>
